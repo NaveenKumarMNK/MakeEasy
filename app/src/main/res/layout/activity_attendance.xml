@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDFAF6"
+    android:padding="10dp"
+    tools:context=".AttendanceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/card_bg">
+ <!--       <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment">
+        <com.google.android.material.tabs.TabLayout
+            android:background="#FDFAF6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_layout"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#F5C0C0"
+            app:tabTextColor="#C3C3C3"
+            android:layout_marginTop="20dp"
+            app:tabIndicator="@color/white"
+            app:tabTextAppearance="@style/Tablayout"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ViewPager"/>
+
+    </LinearLayout>
+
+</LinearLayout>

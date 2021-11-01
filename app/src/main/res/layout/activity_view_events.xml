@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDFAF6"
+    tools:context=".ViewEventsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/Events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:id="@+id/TextOrganise"
+            android:textColor="#11324D"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=" "
+            android:id="@+id/OrganizedBy"
+            android:layout_marginStart="10dp"
+            android:textSize="18dp"
+            android:textColor="#11324D"
+            android:fontFamily="@font/poppinslight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:id="@+id/Text"
+            android:textColor="#11324D"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=" "
+            android:id="@+id/Description"
+            android:layout_marginStart="10dp"
+            android:textSize="18dp"
+            android:textColor="#11324D"
+            android:fontFamily="@font/poppinslight"/>
+    </LinearLayout>
+
+</ScrollView>

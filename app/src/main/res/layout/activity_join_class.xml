@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FDFAF6"
+    tools:context=".JoinClassActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rollno"
+            android:textSize="25sp"
+            android:textColor="#11324D"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:id="@+id/Rollno"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="#11324D"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppinslight"
+            android:id="@+id/Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask your teacher for the code, and enter here."
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinslight"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:counterEnabled="true"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:counterMaxLength="6"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="#11324D"
+            app:boxStrokeWidth="1dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Code"
+            app:hintTextColor="#11324D">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdittextCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppinslight"
+                android:inputType="number"
+                android:textColor="#11324D"
+                android:maxLength="6" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#CEE5D0"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="Join"
+            android:id="@+id/Join"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

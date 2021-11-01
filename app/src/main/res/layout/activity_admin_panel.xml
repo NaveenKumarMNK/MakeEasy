@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FDFAF6"
+    tools:context=".AdminPanelActivity">
+
+    <RelativeLayout
+        android:id="@+id/IconsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/ProfileView"
+            android:src="@color/design_default_color_background"
+            app:civ_border_color="#11324D"
+            app:civ_border_width="1.0dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/WelcomeLayout">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Hello ,"
+            android:textColor="#11324D"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Welcome"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Admin"
+            android:textColor="#F6AE99"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinslight"
+            android:text="What would you like to do ?"
+            android:textColor="#AFB9C8"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/TakeAttendance"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:background="@drawable/card_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Take \nAttendance"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CreateClass"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/card_bgtwo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Create \nClass"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:background="@drawable/card_bgthree"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/TakeAttendance"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/UploadEvents">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload \nEvents"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

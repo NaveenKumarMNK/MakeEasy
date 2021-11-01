@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "325939976331",
+    "project_id": "studily-9d128",
+    "storage_bucket": "studily-9d128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325939976331:android:712de06f7822af39565c8e",
+        "android_client_info": {
+          "package_name": "com.dojo.studily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325939976331-e62o79b2d95bmuhb38p3njbrm56m6agc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dojo.studily",
+            "certificate_hash": "76290a1ff73f1562ac25b45d3ffc3c330bc0d122"
+          }
+        },
+        {
+          "client_id": "325939976331-khms5uc5kvlk90n7mnar8otfphdh0ent.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFyIN54ExFmZYogMHJ8d-oiMErUP0-x38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325939976331-khms5uc5kvlk90n7mnar8otfphdh0ent.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325939976331:android:3c7742d690b23f39565c8e",
+        "android_client_info": {
+          "package_name": "com.miniproject.MakeEasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325939976331-khms5uc5kvlk90n7mnar8otfphdh0ent.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFyIN54ExFmZYogMHJ8d-oiMErUP0-x38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325939976331-khms5uc5kvlk90n7mnar8otfphdh0ent.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

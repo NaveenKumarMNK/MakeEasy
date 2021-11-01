@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FDFAF6"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".MarkAttendanceFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinslight"
+                android:text="Mark your Attendance"
+                android:textColor="#11324D"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/PointOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinslight"
+                android:lineSpacingExtra="5dp"
+                android:text="1. Enter the valid number to get the Attendance"
+                android:textAlignment="textStart"
+                android:textColor="#C3C3C3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PointOne"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinslight"
+                android:lineSpacingExtra="5dp"
+                android:text="2. The generated number will be available only for 45 seconds"
+                android:textAlignment="textStart"
+                android:textColor="#C3C3C3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:counterEnabled="true"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:counterMaxLength="6"
+                app:endIconMode="clear_text"
+                app:boxStrokeColor="#11324D"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="OTP"
+                app:hintTextColor="#11324D">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EdittextOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppinslight"
+                    android:inputType="text"
+                    android:textColor="#11324D"
+                    android:maxLength="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#F5C0C0"
+                android:fontFamily="@font/poppins"
+                android:text="Verify"
+                android:textAlignment="center"
+                android:id="@+id/VerifyButton"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="14dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinslight"
+                android:text="0:45"
+                android:id="@+id/time"
+                android:textColor="#11324D"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+   </ScrollView>
